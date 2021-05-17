@@ -1,5 +1,6 @@
-include <iostream>
-include <vector>
+#include <iostream>
+#include <vector>
+#include <string>
 using namespace std;
 
 /*
@@ -10,7 +11,7 @@ using namespace std;
         E.g., print_suit(2) prints diamonds.
 */
 
-void print_suit ( int suiteNum ) {
+void print_suite ( int suiteNum ) {
     suiteNum -= 1;
     
     static const vector<string> suiteNames = {
@@ -36,7 +37,7 @@ void print_suit ( int suiteNum ) {
         "King"
     };
 
-    for ( let i = 0; i < cardNames.size(); i++ ) {
+    for ( int i = 0; i < cardNames.size(); i++ ) {
         cout << cardNames.at( i ) << " of " << suiteNames.at( suiteNum );
     }
 }
