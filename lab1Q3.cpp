@@ -19,7 +19,7 @@ int main() {
 
 
 	while ( userInt != "q" ) {
-        	cout << userInt << " is an" << ( IsEven( stoi( userInt ) ) ? " even " : " odd" ) << " number" << ends;
+        	cout << userInt << " is an" << ( IsEven( stoi( userInt ) ) ? " even " : " odd" ) << " number" << endl;
 		
 		cout << "Input an integer to check if it is even. Input 'q' when done" << endl;
           	getline(cin, userInt);
