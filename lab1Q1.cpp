@@ -13,14 +13,14 @@ using namespace std;
 void print_suit ( int suiteNum ) {
     suiteNum -= 1;
     
-    const vector<string> suiteNames = {
+    static const vector<string> suiteNames = {
         "Clubs",
         "Diamonds",
         "Hearts",
         "Spades"
     };
 
-    const vector<string> cardNames = {
+    static const vector<string> cardNames = {
         "Ace",
         "2",
         "3",
